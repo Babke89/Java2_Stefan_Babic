@@ -15,12 +15,17 @@ public class Student {
         this.firstName = "not defined";
         this.lastName = "not defined";
         this.yearOfBirth = 0;
+        this.course = new Course();
+        this.computer = new Computer();
+
     }
 
     public Student(String firstName, String lastName, int yearOfBirth) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.yearOfBirth = yearOfBirth;
+        this.course = new Course();
+        this.computer = new Computer();
     }
 
     public Student(String firstName, String lastName, int yearOfBirth, Course course, Computer computer) {
@@ -31,8 +36,6 @@ public class Student {
         this.computer = computer;
     }
 
-    
-    
     public Computer getComputer() {
         return computer;
     }
@@ -40,10 +43,6 @@ public class Student {
     public void setComputer(Computer computer) {
         this.computer = computer;
     }
-    
-    
-    
-    
 
     public Course getCourse() {
         return this.course;
