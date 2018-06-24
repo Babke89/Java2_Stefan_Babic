@@ -11,7 +11,7 @@ public class Student {
     private Course course;
     private Computer computer;
 
-    public Student() {
+     public Student() {
         this.firstName = "not defined";
         this.lastName = "not defined";
         this.yearOfBirth = 0;
@@ -79,8 +79,16 @@ public class Student {
     public void info() {
         System.out.println("First name : " + getFirstName());
         System.out.println("Last name : " + getLastName());
-        System.out.println("First name : " + getFirstName());
-
+        System.out.println("Year of birth : " + getYearOfBirth());
+        
+        System.out.println("Computer, computer hardrive: " + getComputer().getHardDrive());
+        System.out.println("Computer, memory: " + getComputer().getMemory());
+        System.out.println("Computer, processor tact : " + getComputer().getProcessTact());
+        
+        System.out.println("Course, name : " + getCourse().getName());
+        System.out.println("Course, number of classes : " + getCourse().getNumberOfClasses() );
+        
+        
     }
 
 }
